@@ -21,7 +21,7 @@ student2 = {
  "student_id": 1008,
  "first_name": "Nicholas",
  "last_name": "Purples",
- "email": "Nicholaspurples@gmail.com",
+ "email": "nicholaspurples@gmail.com",
  "age": 24,
  "gender": "Female",
  "enrolled": False
