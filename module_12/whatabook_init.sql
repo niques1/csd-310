@@ -5,7 +5,7 @@ DROP USER IF EXISTS 'whatabook_user'@'localhost';
 
 CREATE USER 'whatabook_user'@'localhost' IDENTIFIED WITH mysql_native_password BY 'MySQL8IsGreat!';
  
-GRANT ALL PRIVILEGES ON whatabook.* TO'whatabook_users'@'localhost';
+GRANT ALL PRIVILEGES ON whatabook.* TO'whatabook_user'@'localhost';
 
 USE whatabook; 
 
