@@ -1,4 +1,3 @@
--- Active: 1676241560554@@localhost@3306@whatabooks
 
 
 CREATE DATABASE whatabook;
