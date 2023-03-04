@@ -10,6 +10,7 @@ import sys
 import mysql.connector
 from mysql.connector import errorcode
 
+
 """ database config object """
 config = {
     "user": "whatabook_user",
@@ -18,6 +19,7 @@ config = {
     "database": "whatabook",
     "raise_on_warnings": True
 }
+
 
 def show_menu():
     print("\n  -- Main Menu --")
@@ -129,7 +131,7 @@ def show_books_to_add(_cursor, _user_id):
     print("\n        -- DISPLAYING AVAILABLE BOOKS --")
 
     for book in books_to_add:
-        print("        Book Id: {}\n        Book Name: {}\n".format(book[0], book[1]))
+        print("        Book Id: {}\n        Book Name: {}\n        Details: {}\n".format(book[0], book[1], book[3]))
 
 def add_book_to_wishlists(_cursor, _user_id, _book_id):
     _cursor.execute("INSERT INTO wishlists(user_id, book_id) VALUES({}, {})".format(_user_id, _book_id))
