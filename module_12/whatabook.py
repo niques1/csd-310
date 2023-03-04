@@ -44,7 +44,7 @@ def show_books(_cursor):
     
     # iterate over the player data set and display the results 
     for book in books:
-        print("  Book Name: {}\n  Author: {}\n  Details: {}\n".format(book[0], book[1], book[2]))
+        print("  Book Name: {}\n  Author: {}\n  Details: {}\n".format(book[1], book[2], book[3]))
 
 def show_locations(_cursor):
     _cursor.execute("SELECT store_id, locale from stores")
